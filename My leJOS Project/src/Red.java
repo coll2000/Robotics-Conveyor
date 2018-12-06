@@ -31,6 +31,7 @@ public class Red implements Behavior {
 
 	@Override
 	public void action() {
+		central.scan.displayColours();
 		mp.travel(central.redDist);
 		central.pushItem();
 		mp.setLinearSpeed(50);
